@@ -1,0 +1,96 @@
+# Blank owner-confirmed operating profile. Unknown is not approval.
+# Copy to local/business-profile.yaml only after owner review.
+schema_version: 1
+confirmation:
+  owner: Unknown
+  reviewer: Unknown
+  confirmed_at: Unknown
+  source_of_confirmation: Unknown
+business:
+  legal_name: Unknown
+  public_name: Unknown
+  business_model: Unknown
+  website: Unknown
+  jurisdiction: Unknown
+  timezone_iana: Unknown
+  reporting_currency: Unknown
+  primary_language: Unknown
+  supported_languages: Unknown
+  target_countries: Unknown
+  real_locations: Unknown
+  service_areas: Unknown
+  business_hours: Unknown
+customers:
+  segments: Unknown
+  buyer_tasks: Unknown
+  buying_constraints: Unknown
+  exclusions: Unknown
+  decision_journey: Unknown
+offers:
+  services: Unknown
+  products: Unknown
+  prices_and_currency: Unknown
+  margin_or_value_assumptions: Unknown
+  capacity_limits: Unknown
+  differentiators: Unknown
+  prohibited_claims: Unknown
+proof:
+  approved_case_studies: Unknown
+  original_research: Unknown
+  expert_reviewers: Unknown
+  product_testing: Unknown
+  testimonial_permissions: Unknown
+  licenses_and_qualifications: Unknown
+brand:
+  voice: Unknown
+  terminology: Unknown
+  visual_reference: Unknown
+  author_identity: Unknown
+  disclosure_rules: Unknown
+  approved_ctas: Unknown
+goals:
+  business_outcomes: Unknown
+  baseline_and_period: Unknown
+  target_and_horizon: Unknown
+  lead_qualification_definition: Unknown
+  conversion_events: Unknown
+  constraints_and_budget: Unknown
+properties:
+  allowed_read_domains: Unknown
+  allowed_write_domains: Unknown
+  cms_and_site_id: Unknown
+  staging_property: Unknown
+  search_console_properties: Unknown
+  analytics_properties: Unknown
+  business_profile_locations: Unknown
+  merchant_center_account: Unknown
+  bing_properties: Unknown
+  competitor_domains: Unknown
+  competitor_selection_rationale: Unknown
+team:
+  owner_approver: Unknown
+  editorial_reviewer: Unknown
+  subject_matter_reviewer: Unknown
+  legal_or_compliance_reviewer: Unknown
+  developer: Unknown
+  measurement_owner: Unknown
+  publishing_owner: Unknown
+  profile_id_mappings: Unknown
+permissions:
+  allowed_data_sources: Unknown
+  export_storage_location: Unknown
+  retention_and_deletion: Unknown
+  personal_data_handling: Unknown
+  external_model_data_permissions: Unknown
+  read_permissions: Unknown
+  local_draft_permissions: Unknown
+  allowed_external_actions: Unknown
+  approval_channel_and_identity: Unknown
+  access_expiry: Unknown
+  crawler_search_preferences: Unknown
+  crawler_training_preferences: Unknown
+  gsc_generative_ai_inclusion_preference: Unknown
+review:
+  last_reviewed_at: Unknown
+  next_review_trigger: Unknown
+  unresolved_questions: Unknown

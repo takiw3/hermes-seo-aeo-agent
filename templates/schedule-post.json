@@ -1,0 +1,8 @@
+{
+  "origin": "https://example.com",
+  "scheduled_at": "2030-01-02T09:00:00-05:00",
+  "title": "Owner reviewed article",
+  "slug": "owner-reviewed-article",
+  "content": "<p>Replace this draft with owner-reviewed, source-checked content before approval.</p>",
+  "excerpt": "Replace with an accurate summary of the reviewed article."
+}

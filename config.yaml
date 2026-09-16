@@ -1,0 +1,17 @@
+# Provider-neutral. Configure a model in this profile after installation.
+# These are defense-in-depth settings, not a capability sandbox.
+memory:
+  write_approval: true
+skills:
+  write_approval: true
+curator:
+  consolidate: false
+delegation:
+  subagent_auto_approve: false
+terminal:
+  home_mode: profile
+approvals:
+  mode: manual
+  cron_mode: deny
+  single_query_mode: deny
+# No credentials, MCP servers, cron jobs, bot accounts or model overrides.

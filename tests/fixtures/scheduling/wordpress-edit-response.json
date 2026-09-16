@@ -1,0 +1,17 @@
+{
+  "id": 42,
+  "type": "post",
+  "status": "future",
+  "date": "2030-01-02T09:00:00",
+  "date_gmt": "2030-01-02T14:00:00",
+  "slug": "owner-reviewed-article",
+  "title": {"raw": "Owner reviewed article", "rendered": "Owner reviewed article"},
+  "content": {"raw": "<p>Evidence-backed draft.</p>", "rendered": "<p>Evidence-backed draft.</p>\n", "protected": false},
+  "excerpt": {"raw": "A reviewed summary.", "rendered": "<p>A reviewed summary.</p>\n", "protected": false},
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "sticky": false,
+  "format": "standard",
+  "author": 7,
+  "link": "https://example.com/?p=42"
+}

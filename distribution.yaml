@@ -1,0 +1,22 @@
+name: seo-aeo
+version: 1.0.0
+description: >-
+  SEO and answer-engine optimization specialist for business owners. Audits
+  websites, researches customer intent, creates evidence-backed content,
+  plans technical improvements, measures search and AI visibility, and
+  prepares editorial schedules. Local research and drafts by default;
+  optional WordPress future-post submission is owner-operated and requires
+  exact single-use approval. No ranking or citation guarantees.
+hermes_requires: ">=0.20.0"
+author: Taki Wong / TakiGPT AI Inc.
+license: MIT
+# Only these paths ship. User business data and credentials never do.
+# Config is preserved on update unless the owner uses --force-config.
+distribution_owned:
+  - distribution.yaml
+  - profile.yaml
+  - SOUL.md
+  - config.yaml
+  - templates
+  - references
+  - skills/seo-aeo-core

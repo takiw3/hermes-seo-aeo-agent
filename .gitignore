@@ -1,0 +1,46 @@
+# Credentials and owner data
+.env
+.env.*
+auth.json
+*token.json
+*client_secret.json
+credentials.json
+local/
+editorial/
+memories/
+sessions/
+logs/
+workspace/
+home/
+profiles/
+plans/
+backups/
+checkpoints/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+# Runtime and generated artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+cache/
+*_cache/
+node_modules/
+.DS_Store
+artifacts/
+build/
+dist/
+*.log
+# Hermes state
+gateway.pid
+gateway_state.json
+processes.json
+active_profile
+.hermes_history
+.update_check

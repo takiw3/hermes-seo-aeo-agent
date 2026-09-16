@@ -1,0 +1,2 @@
+cluster_id,query_or_customer_question,source,source_date,market,language,observed_intent,confidence,buyer_stage,business_offer,existing_canonical_url,page_decision,proposed_url,distinctive_proof,volume_source_and_window,volume_or_unknown,conversion_goal,overlap_notes,reviewer
+Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown

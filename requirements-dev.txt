@@ -1,0 +1,2 @@
+# Repository checks only. Runtime audit and queue helpers use the standard library.
+PyYAML==6.0.3
