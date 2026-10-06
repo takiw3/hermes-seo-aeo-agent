@@ -41,23 +41,53 @@ Business owners, entrepreneurs and small teams running service businesses, local
 
 The model writes the content. The deterministic tools crawl and manage the queue. Offline tool tests are not a model-quality benchmark or a live-CMS certification.
 
+## Requirements
+
+- [Hermes Agent](https://hermes-agent.nousresearch.com) **0.20.0 or newer**. This is the path-aware `distribution_owned` floor; older releases can overwrite owner-created skills on update. See the [tested versions and limits](docs/testing.md).
+- Git for installing from GitHub. **Python 3.10+** for the included audit and editorial helpers; they use only the standard library.
+- A model provider configured for this profile. No CMS or third-party search account is needed for research and local drafts.
+
 ## Install
 
-Requires **Hermes 0.20.0+**, Git, and **Python 3.10+** for the included helpers. The installation floor exists for path-aware distribution ownership. Runtime helpers use only Python's standard library. Configure your own model/provider after installation.
+One command installs the profile, with a prompt to review the manifest before anything is written:
 
 ```bash
 hermes profile install https://github.com/takiw3/hermes-seo-aeo-agent --alias
-hermes -p seo-aeo model
-hermes -p seo-aeo chat
 ```
 
-`--alias` is an on/off flag and creates the `seo-aeo` shortcut. Review the manifest when prompted. Use `--yes` only after reviewing and trusting the repository. For a local checkout, use `hermes profile install /absolute/path/to/hermes-seo-aeo-agent --alias`.
+`--alias` also creates a `seo-aeo` shell wrapper so you can invoke the profile directly. It is an on/off flag, not a value to supply. For a reviewed local checkout, you can instead use `hermes profile install /absolute/path/to/hermes-seo-aeo-agent --alias`.
 
-Installation copies only identity, config, skills, references and templates into the profile. It does **not** configure a model, copy another agent's credentials, create a bot, connect a CMS, start onboarding, schedule a job or publish anything. An installed profile becomes usable only after model configuration and a successful conversation.
+### Trusted automation only
 
-## First conversation
+For scripted setups that have **already reviewed this repository**, the confirmation prompt can be skipped:
 
-> My website is [URL]. We sell [offer] to [customer] in [market]. Our goal is [qualified leads or profitable sales]. Configure this agent for my business, audit the highest-value pages and recommend the first three actions. Do not publish or schedule anything.
+```bash
+hermes profile install https://github.com/takiw3/hermes-seo-aeo-agent --alias --yes
+```
+
+Hermes distributions are unsigned, and installs currently track this repository's default branch (git ref pinning is not yet supported by the tested installer). `--yes` skips the manifest preview. It is **not** the safe default; do not use it on your first install. Review what you are installing.
+
+### What installation does — and doesn't
+
+Installing copies this distribution's identity, configuration, skills, references and templates into an isolated Hermes profile named `seo-aeo`. That's all. It does **not** start onboarding, configure a model or credentials, inherit Jarvis's credentials, connect Search Console or a CMS, start a gateway, launch a conversation, create a bot, schedule a job or publish anything. The profile uses the model provider you configure for it; onboarding begins when you first talk to the agent.
+
+## First run
+
+1. Configure this profile's model and provider. Profiles are isolated; do not copy another profile's OAuth credentials. If authentication is required, complete this profile's own owner-driven sign-in:
+
+   ```bash
+   hermes -p seo-aeo model
+   ```
+
+2. Start a conversation:
+
+   ```bash
+   hermes -p seo-aeo chat
+   ```
+
+3. Give it your business context, for example:
+
+   > My website is [URL]. We sell [offer] to [customer] in [market]. Our goal is [qualified leads or profitable sales]. Configure this agent for my business, audit the highest-value pages and recommend the first three actions. Do not publish or schedule anything.
 
 The agent begins with the [business template](templates/business-profile.yaml), learns progressively, and saves your confirmed operating profile under `local/business-profile.yaml`. Unknown facts remain Unknown. You control voice, market, language, timezone, proof, allowed domains, reviewers and teammate IDs. See [onboarding](docs/onboarding.md).
 
